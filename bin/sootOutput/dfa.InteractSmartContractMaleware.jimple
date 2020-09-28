@@ -1,0 +1,137 @@
+public class dfa.InteractSmartContractMaleware extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        dfa.InteractSmartContractMaleware r0;
+
+        r0 := @this: dfa.InteractSmartContractMaleware;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static void main(java.lang.String[]) throws java.lang.Exception
+    {
+        java.lang.String[] r0;
+        org.web3j.protocol.Web3j r1;
+        org.web3j.crypto.Credentials r5;
+        dfa.Malware r7;
+        org.web3j.protocol.core.methods.response.TransactionReceipt r10;
+        org.web3j.tuples.generated.Tuple3 r11;
+        org.web3j.protocol.http.HttpService $r12;
+        java.io.File $r13;
+        java.math.BigInteger $r14, $r15;
+        test.malware.MalwareTest $r16;
+        java.text.SimpleDateFormat $r17;
+        java.util.Date $r18;
+        java.lang.String $r19, $r34, $r37, $r39;
+        org.web3j.protocol.core.RemoteCall $r20, $r22, $r40, $r41;
+        java.lang.Object $r21, $r23, $r26, $r29, $r32;
+        java.lang.StringBuilder $r24, $r27, $r28, $r30, $r31, $r33, $r35, $r38;
+        java.io.PrintStream $r25, $r36;
+
+        r0 := @parameter0: java.lang.String[];
+
+        $r12 = new org.web3j.protocol.http.HttpService;
+
+        specialinvoke $r12.<org.web3j.protocol.http.HttpService: void <init>()>();
+
+        r1 = staticinvoke <org.web3j.protocol.Web3j: org.web3j.protocol.Web3j build(org.web3j.protocol.Web3jService)>($r12);
+
+        $r13 = new java.io.File;
+
+        specialinvoke $r13.<java.io.File: void <init>(java.lang.String)>("D:\\eth_test\\keystore\\UTC--2018-09-03T23-08-14.524286100Z--aed900d3ff41decff449b2978d66d2aeab42099e");
+
+        $r14 = new java.math.BigInteger;
+
+        specialinvoke $r14.<java.math.BigInteger: void <init>(java.lang.String)>("3000000");
+
+        $r15 = new java.math.BigInteger;
+
+        specialinvoke $r15.<java.math.BigInteger: void <init>(java.lang.String)>("0");
+
+        r5 = staticinvoke <org.web3j.crypto.WalletUtils: org.web3j.crypto.Credentials loadCredentials(java.lang.String,java.io.File)>("password", $r13);
+
+        $r16 = new test.malware.MalwareTest;
+
+        specialinvoke $r16.<test.malware.MalwareTest: void <init>()>();
+
+        virtualinvoke $r16.<test.malware.MalwareTest: void stealData(java.lang.String,java.lang.String,java.math.BigInteger,java.math.BigInteger)>("password", "imei", $r14, $r15);
+
+        r7 = staticinvoke <dfa.Malware: dfa.Malware load(java.lang.String,org.web3j.protocol.Web3j,org.web3j.crypto.Credentials,java.math.BigInteger,java.math.BigInteger)>("0x1b25fd1050c6908324245be0b1c47378fb71fcca", r1, r5, $r15, $r14);
+
+        $r17 = new java.text.SimpleDateFormat;
+
+        specialinvoke $r17.<java.text.SimpleDateFormat: void <init>(java.lang.String)>("yyyy/MM/dd HH:mm:ss");
+
+        $r18 = new java.util.Date;
+
+        specialinvoke $r18.<java.util.Date: void <init>()>();
+
+        $r19 = virtualinvoke $r17.<java.text.DateFormat: java.lang.String format(java.util.Date)>($r18);
+
+        $r20 = virtualinvoke r7.<dfa.Malware: org.web3j.protocol.core.RemoteCall setMalware(java.lang.String,java.lang.String,java.lang.String)>("Maleware", "Type", $r19);
+
+        $r21 = virtualinvoke $r20.<org.web3j.protocol.core.RemoteCall: java.lang.Object send()>();
+
+        r10 = (org.web3j.protocol.core.methods.response.TransactionReceipt) $r21;
+
+        $r22 = virtualinvoke r7.<dfa.Malware: org.web3j.protocol.core.RemoteCall getMalware()>();
+
+        $r23 = virtualinvoke $r22.<org.web3j.protocol.core.RemoteCall: java.lang.Object send()>();
+
+        r11 = (org.web3j.tuples.generated.Tuple3) $r23;
+
+        $r25 = <java.lang.System: java.io.PrintStream out>;
+
+        $r24 = new java.lang.StringBuilder;
+
+        specialinvoke $r24.<java.lang.StringBuilder: void <init>(java.lang.String)>("Print: Maleware: ");
+
+        $r26 = virtualinvoke r11.<org.web3j.tuples.generated.Tuple3: java.lang.Object getValue1()>();
+
+        $r27 = virtualinvoke $r24.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)>($r26);
+
+        $r28 = virtualinvoke $r27.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(" Type: ");
+
+        $r29 = virtualinvoke r11.<org.web3j.tuples.generated.Tuple3: java.lang.Object getValue2()>();
+
+        $r30 = virtualinvoke $r28.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)>($r29);
+
+        $r31 = virtualinvoke $r30.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(" Age: ");
+
+        $r32 = virtualinvoke r11.<org.web3j.tuples.generated.Tuple3: java.lang.Object getValue3()>();
+
+        $r33 = virtualinvoke $r31.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)>($r32);
+
+        $r34 = virtualinvoke $r33.<java.lang.StringBuilder: java.lang.String toString()>();
+
+        virtualinvoke $r25.<java.io.PrintStream: void println(java.lang.String)>($r34);
+
+        $r36 = <java.lang.System: java.io.PrintStream out>;
+
+        $r35 = new java.lang.StringBuilder;
+
+        specialinvoke $r35.<java.lang.StringBuilder: void <init>(java.lang.String)>("TRANSACTION Address: ");
+
+        $r37 = virtualinvoke r10.<org.web3j.protocol.core.methods.response.TransactionReceipt: java.lang.String getFrom()>();
+
+        $r38 = virtualinvoke $r35.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($r37);
+
+        $r39 = virtualinvoke $r38.<java.lang.StringBuilder: java.lang.String toString()>();
+
+        virtualinvoke $r36.<java.io.PrintStream: void println(java.lang.String)>($r39);
+
+        $r40 = virtualinvoke r7.<dfa.Malware: org.web3j.protocol.core.RemoteCall setMalware(java.lang.String,java.lang.String,java.lang.String)>("stealData", "Malware", "Date");
+
+        virtualinvoke $r40.<org.web3j.protocol.core.RemoteCall: java.lang.Object send()>();
+
+        $r41 = virtualinvoke r7.<dfa.Malware: org.web3j.protocol.core.RemoteCall setMalware(java.lang.String,java.lang.String,java.lang.String)>("loadCredentials", "Malware", "Date");
+
+        virtualinvoke $r41.<org.web3j.protocol.core.RemoteCall: java.lang.Object send()>();
+
+        return;
+    }
+}

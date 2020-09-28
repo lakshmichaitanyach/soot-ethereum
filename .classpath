@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="D:/College/UB/CSE 605/sootclasses-trunk-jar-with-dependencies.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Sean/.m2/repository/org/web3j/core/3.5.0/core-3.5.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Sean/.m2/repository/org/web3j/core/3.5.0/core-3.5.0-sources.jar"/>
+	<classpathentry kind="lib" path="D:/College/UB/CSE 605/InteractSmartContract_lib/abi-3.5.0.jar"/>
+	<classpathentry kind="lib" path="D:/College/UB/CSE 605/InteractSmartContract_lib/asm-5.0.3.jar"/>
+	<classpathentry kind="lib" path="D:/College/UB/CSE 605/InteractSmartContract_lib/asm-analysis-5.0.3.jar"/>
+	<classpathentry kind="lib" path="D:/College/UB/CSE 605/InteractSmartContract_lib/asm-commons-5.0.3.jar"/>
+	<classpathentry kind="lib" path="D:/College/UB/CSE 605/InteractSmartContract_lib/asm-tree-5.0.3.jar"/>
+	<classpathentry kind="lib" path="D:/College/UB/CSE 605/InteractSmartContract_lib/asm-util-5.0.3.jar"/>
+	<classpathentry kind="lib" path="D:/College/UB/CSE 605/InteractSmartContract_lib/bcprov-jdk15on-1.54.jar"/>
+	<classpathentry kind="lib" path="D:/College/UB/CSE 605/InteractSmartContract_lib/core-3.5.0.jar"/>
+	<classpathentry kind="lib" path="D:/College/UB/CSE 605/InteractSmartContract_lib/crypto-3.5.0.jar" sourcepath="C:/Users/Sean/.m2/repository/org/web3j/crypto/3.5.0/crypto-3.5.0-sources.jar"/>
+	<classpathentry kind="lib" path="D:/College/UB/CSE 605/InteractSmartContract_lib/jackson-annotations-2.8.0.jar"/>
+	<classpathentry kind="lib" path="D:/College/UB/CSE 605/InteractSmartContract_lib/jackson-core-2.8.5.jar"/>
+	<classpathentry kind="lib" path="D:/College/UB/CSE 605/InteractSmartContract_lib/jackson-databind-2.8.5.jar"/>
+	<classpathentry kind="lib" path="D:/College/UB/CSE 605/InteractSmartContract_lib/Java-WebSocket-1.3.8.jar"/>
+	<classpathentry kind="lib" path="D:/College/UB/CSE 605/InteractSmartContract_lib/jffi-1.2.14.jar"/>
+	<classpathentry kind="lib" path="D:/College/UB/CSE 605/InteractSmartContract_lib/jffi-1.2.14-native.jar"/>
+	<classpathentry kind="lib" path="D:/College/UB/CSE 605/InteractSmartContract_lib/jnr-constants-0.9.6.jar"/>
+	<classpathentry kind="lib" path="D:/College/UB/CSE 605/InteractSmartContract_lib/jnr-enxio-0.14.jar"/>
+	<classpathentry kind="lib" path="D:/College/UB/CSE 605/InteractSmartContract_lib/jnr-ffi-2.1.2.jar"/>
+	<classpathentry kind="lib" path="D:/College/UB/CSE 605/InteractSmartContract_lib/jnr-posix-3.0.33.jar"/>
+	<classpathentry kind="lib" path="D:/College/UB/CSE 605/InteractSmartContract_lib/jnr-unixsocket-0.15.jar"/>
+	<classpathentry kind="lib" path="D:/College/UB/CSE 605/InteractSmartContract_lib/jnr-x86asm-1.0.2.jar"/>
+	<classpathentry kind="lib" path="D:/College/UB/CSE 605/InteractSmartContract_lib/logging-interceptor-3.8.1.jar"/>
+	<classpathentry kind="lib" path="D:/College/UB/CSE 605/InteractSmartContract_lib/okhttp-3.8.1.jar"/>
+	<classpathentry kind="lib" path="D:/College/UB/CSE 605/InteractSmartContract_lib/okio-1.13.0.jar"/>
+	<classpathentry kind="lib" path="D:/College/UB/CSE 605/InteractSmartContract_lib/rlp-3.5.0.jar"/>
+	<classpathentry kind="lib" path="D:/College/UB/CSE 605/InteractSmartContract_lib/rxjava-1.2.4.jar"/>
+	<classpathentry kind="lib" path="D:/College/UB/CSE 605/InteractSmartContract_lib/slf4j-api-1.7.25.jar"/>
+	<classpathentry kind="lib" path="D:/College/UB/CSE 605/InteractSmartContract_lib/tuples-3.5.0.jar"/>
+	<classpathentry kind="lib" path="D:/College/UB/CSE 605/InteractSmartContract_lib/utils-3.5.0.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

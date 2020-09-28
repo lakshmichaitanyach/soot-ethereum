@@ -1,0 +1,53 @@
+public class dfa.Hello extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        dfa.Hello r0;
+
+        r0 := @this: dfa.Hello;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static void main(java.lang.String[])
+    {
+        java.lang.String[] r0;
+
+        r0 := @parameter0: java.lang.String[];
+
+        staticinvoke <dfa.Hello: void callMethodPrint()>();
+
+        return;
+    }
+
+    private static void callMethodPrint()
+    {
+        java.lang.Integer r2;
+        java.lang.StringBuilder $r3, $r6, $r7;
+        java.io.PrintStream $r4;
+        java.lang.String $r5, $r8;
+
+        r2 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(2);
+
+        $r4 = <java.lang.System: java.io.PrintStream out>;
+
+        $r3 = new java.lang.StringBuilder;
+
+        $r5 = staticinvoke <java.lang.String: java.lang.String valueOf(java.lang.Object)>("Hello World");
+
+        specialinvoke $r3.<java.lang.StringBuilder: void <init>(java.lang.String)>($r5);
+
+        $r6 = virtualinvoke $r3.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)>(r2);
+
+        $r7 = virtualinvoke $r6.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("Data");
+
+        $r8 = virtualinvoke $r7.<java.lang.StringBuilder: java.lang.String toString()>();
+
+        virtualinvoke $r4.<java.io.PrintStream: void println(java.lang.String)>($r8);
+
+        return;
+    }
+}
